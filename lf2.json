@@ -13,7 +13,7 @@
   { "q": "Was bedeutet SATA?", "a": "Serial Advanced Technology Attachment" },
   { "q": "Was bedeutet MCH?", "a": "memory controller hub \n Northbridge" },
   { "q": "Was bedeutet ICH?", "a": "I/O controller hub \n Southbrige" },
-  { "q": "Was bedeutet DMI?", "a": "Direct Media Interface" },
+  { "q": "Was bedeutet DMI?", "a": "Direct Media Interface \n Schnittstelle zwischen North- & Southbrige" },
   { "q": "Was bedeutet ?", "a": "" },
   { "q": "Was bedeutet ?", "a": "" },
   { "q": "Was bedeutet ?", "a": "" }
