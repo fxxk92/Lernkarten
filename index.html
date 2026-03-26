@@ -2,24 +2,94 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Meine Lernkarten</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lernkarten App</title>
     <style>
-        body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background: #f0f2f5; }
-        .card { width: 300px; height: 200px; perspective: 1000px; cursor: pointer; }
-        .card-inner { position: relative; width: 100%; height: 100%; text-align: center; transition: transform 0.6s; transform-style: preserve-3d; box-shadow: 0 4px 8px rgba(0,0,0,0.2); border-radius: 10px; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; margin: 0; background: #f4f7f6; color: #333; }
+        h1 { margin-bottom: 10px; font-size: 1.5rem; }
+        
+        /* Das Auswahlmenü */
+        select { margin-bottom: 20px; padding: 12px; border-radius: 8px; border: 1px solid #ccc; font-size: 1rem; width: 280px; cursor: pointer; background: white; }
+
+        /* Karten-Design */
+        .card { width: 340px; height: 240px; perspective: 1000px; cursor: pointer; }
+        .card-inner { position: relative; width: 100%; height: 100%; text-align: center; transition: transform 0.6s; transform-style: preserve-3d; }
         .card.flipped .card-inner { transform: rotateY(180deg); }
-        .front, .back { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; display: flex; align-items: center; justify-content: center; padding: 20px; box-sizing: border-box; border-radius: 10px; background: white; font-size: 1.2rem; }
+        .front, .back { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; display: flex; align-items: center; justify-content: center; padding: 25px; box-sizing: border-box; border-radius: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); font-size: 1.2rem; background: white; border: 1px solid #eee; }
         .back { background: #007bff; color: white; transform: rotateY(180deg); }
+
+        /* Buttons */
+        .controls { margin-top: 30px; display: flex; gap: 15px; }
+        button { padding: 12px 24px; font-size: 1rem; cursor: pointer; border: none; border-radius: 8px; transition: 0.3s; color: white; font-weight: bold; }
+        .next-btn { background: #28a745; }
+        .shuffle-btn { background: #6c757d; }
+        button:hover { opacity: 0.9; transform: translateY(-2px); }
     </style>
 </head>
 <body>
 
-    <div class="card" onclick="this.classList.toggle('flipped')">
+    <h1>📚 Meine Lernkarten</h1>
+
+    <!-- HIER fügst du deine Dateinamen ein -->
+    <select id="subjectSelect" onchange="loadSubject(this.value)">
+        <option value="">-- Fach auswählen --</option>
+        <option value="mathe.json">Mathematik</option>
+        <option value="recht.json">Recht</option>
+        <option value="it.json">IT-Grundlagen</option>
+    </select>
+
+    <div class="card" id="flashcard" onclick="this.classList.toggle('flipped')">
         <div class="card-inner">
-            <div class="front">Was ist die Hauptstadt von Frankreich?</div>
-            <div class="back">Paris</div>
+            <div class="front" id="question">Bitte wähle oben ein Fach aus, um zu starten.</div>
+            <div class="back" id="answer">...</div>
         </div>
     </div>
 
+    <div class="controls">
+        <button class="shuffle-btn" onclick="shuffleCards()">Mischen 🔀</button>
+        <button class="next-btn" onclick="nextCard()">Nächste Karte →</button>
+    </div>
+
+    <script>
+        let currentCards = [];
+        let currentIndex = 0;
+
+        // Lädt die gewählte JSON-Datei von GitHub
+        async function loadSubject(file) {
+            if (!file) return;
+            try {
+                const response = await fetch(file);
+                currentCards = await response.json();
+                currentIndex = 0;
+                showCard();
+            } catch (error) {
+                alert("Fehler beim Laden der Datei: " + file);
+            }
+        }
+
+        function showCard() {
+            if (currentCards.length === 0) return;
+            const cardElement = document.getElementById('flashcard');
+            cardElement.classList.remove('flipped'); 
+            
+            setTimeout(() => {
+                document.getElementById('question').innerText = currentCards[currentIndex].q;
+                document.getElementById('answer').innerText = currentCards[currentIndex].a;
+            }, 200);
+        }
+
+        function nextCard() {
+            if (currentCards.length === 0) return;
+            currentIndex = (currentIndex + 1) % currentCards.length;
+            showCard();
+        }
+
+        function shuffleCards() {
+            if (currentCards.length === 0) return;
+            currentCards.sort(() => Math.random() - 0.5);
+            currentIndex = 0;
+            showCard();
+        }
+    </script>
 </body>
 </html>
