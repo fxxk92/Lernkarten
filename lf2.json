@@ -6,5 +6,17 @@
   { "q": "Was bedeutet ALU?", "a": "Arithmetic Logic Unit" },
   { "q": "Was bedeutet TDP?", "a": "Thermal Design Power" },
   { "q": "Was bedeutet APU?", "a": "Accelerated Processing Unit \n CPU + GPU kombiniert" },
-  { "q": "Was bedeutet GbE?", "a": "Gigabit Ethernet" }
+  { "q": "Was bedeutet GbE?", "a": "Gigabit Ethernet" },
+  { "q": "Was bedeutet HDD?", "a": "Hard Disk Drive \n " }
+  { "q": "Was bedeutet SSD?", "a": "" }
+  { "q": "Was bedeutet RAID?", "a": "Redundant Array of Independent Disks \n Technologie, die mehrere physische Festplatten oder SSDs zu einer einzigen logischen Einheit zusammenschließt. Dies erhöht die Datensicherheit (Redundanz), steigert die Lese-/Schreibgeschwindigkeit oder kombiniert beides, um Speicher effizienter zu nutzen und Ausfälle zu vermeiden" }
+  { "q": "Was bedeutet ?", "a": "" }
+  { "q": "Was bedeutet ?", "a": "" }
+  { "q": "Was bedeutet ?", "a": "" }
+  { "q": "Was bedeutet ?", "a": "" }
+  { "q": "Was bedeutet ?", "a": "" }
+  { "q": "Was bedeutet ?", "a": "" }
+  { "q": "Was bedeutet ?", "a": "" }
 ]
+
+
