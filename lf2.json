@@ -6,5 +6,5 @@
   { "q": "Was bedeutet ALU?", "a": "Arithmetic Logic Unit" },
   { "q": "Was bedeutet TDP?", "a": "Thermal Design Power" },
   { "q": "Was bedeutet APU?", "a": "Accelerated Processing Unit \n CPU + GPU kombiniert" },
-  { "q": "Was bedeutet ?", "a": "Antwort 2" }
+  { "q": "Was bedeutet GbE?", "a": "Gigabit Ethernet" }
 ]
