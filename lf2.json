@@ -1,4 +1,11 @@
 [
-  { "q": "Frage 1?", "a": "Antwort 1" },
-  { "q": "Frage 2?", "a": "Antwort 2" }
+  { "q": "Was bedeutet RAM?", "a": "Random Access Memory" },
+  { "q": "Was bedeutet DDR?", "a": "Double Data Rate" },
+  { "q": "Was bedeutet GPU?", "a": "Graphic Prozessor Unit" },
+  { "q": "Was bedeutet CPU?", "a": "Central Processing Unit" },
+  { "q": "Was bedeutet ALU?", "a": "Arithmetic Logic Unit" },
+  { "q": "Was bedeutet TDP?", "a": "Thermal Design Power" },
+  { "q": "Was bedeutet APU?", "a": "Accelerated Processing Unit /n CPU + GPU kombiniert" },
+  { "q": "Was bedeutet ?", "a": "Antwort 2" },
+  //{ "q": "Was bedeutet ?", "a": "Antwort 2" },//
 ]
