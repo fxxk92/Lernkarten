@@ -10,7 +10,7 @@
   { "q": "Was bedeutet HDD?", "a": "Hard Disk Drive \n " }
   { "q": "Was bedeutet SSD?", "a": "" }
   { "q": "Was bedeutet RAID?", "a": "Redundant Array of Independent Disks \n Technologie, die mehrere physische Festplatten oder SSDs zu einer einzigen logischen Einheit zusammenschließt. Dies erhöht die Datensicherheit (Redundanz), steigert die Lese-/Schreibgeschwindigkeit oder kombiniert beides, um Speicher effizienter zu nutzen und Ausfälle zu vermeiden" }
-  { "q": "Was bedeutet ?", "a": "" }
+  { "q": "Was bedeutet SATA?", "a": "" }
   { "q": "Was bedeutet ?", "a": "" }
   { "q": "Was bedeutet ?", "a": "" }
   { "q": "Was bedeutet ?", "a": "" }
