@@ -1,4 +1,10 @@
 [
   { "q": "Was bedeutet NIC?", "a": "Network Interface Card" },
-  { "q": "Frage 2?", "a": "Antwort 2" }
+  { "q": "Was bedeutet PDU?", "a": "Antwort 2" }
+  { "q": "Was bedeutet IETF?", "a": "Internet Engeneering Task Force" }
+  { "q": "Was bedeutet IEEE?", "a": "" }
+  { "q": "Was bedeutet TCP?", "a": "" }
+  { "q": "Was bedeutet IP?", "a": "" }
+  { "q": "Was bedeutet MAC?", "a": "" }
+  
 ]
