@@ -87,8 +87,20 @@
             cardElement.classList.remove('flipped'); 
             
             setTimeout(() => {
-                document.getElementById('question').innerText = currentCards[currentIndex].q;
-                document.getElementById('answer').innerText = currentCards[currentIndex].a;
+               const card = currentCards[currentIndex];
+
+const questionEl = document.getElementById('question');
+const answerEl = document.getElementById('answer');
+
+// FRONT
+if (card.img) {
+    questionEl.innerHTML = `<img src="${card.img}" style="max-width:100%; max-height:100%; border-radius:10px;">`;
+} else {
+    questionEl.innerText = card.q;
+}
+
+// BACK
+answerEl.innerText = card.a;
             }, 200);
         }
 
