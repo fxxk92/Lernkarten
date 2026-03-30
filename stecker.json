@@ -1,6 +1,9 @@
 [
-  { "q": img:hdmi.png, "a": "HDMI" },
+  { "q": "", "img": "hdmi.png", "a": "HDMI" },
 ]
+
+
+
 
 {
   "__kommentar": " Hier stehen Steckerbilder und deren Lösungen",
