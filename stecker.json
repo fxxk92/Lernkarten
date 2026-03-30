@@ -1,5 +1,5 @@
 [
-  { "q": "Bild vom Stecker", "a": "SATA" },
+  { "q": /images/ports/hdmi.png, "a": "HDMI" },
 ]
 
 {
