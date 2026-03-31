@@ -17,6 +17,7 @@
   { "q": "Was bedeutet FDI?", "a": "Flexible Display Interface" },
   { "q": "Was bedeutet AHCI?", "a": "Advanced Host Controller Interface \n  techn. Standard für SATA Controller" },
   { "q": "Was bedeutet NVMe?", "a": "Non-Volatile Memory Express \n Hochgeschwindigkeits-Speicherprotokoll für moderne SSDs" },
+  { "q": "Was bedeutet iEEE?", "a": "" },
   { "q": "Was bedeutet ?", "a": "" }
 ]
 
