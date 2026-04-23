@@ -1,5 +1,6 @@
 [
   { "q": "Was bedeutet RAM?", "a": "Random Access Memory" },
+  { "q": "Was bedeutet ROM?", "a": "Read Only Memory" },
   { "q": "Was bedeutet DDR?", "a": "Double Data Rate" },
   { "q": "Was bedeutet GPU?", "a": "Graphic Prozessor Unit" },
   { "q": "Was bedeutet CPU?", "a": "Central Processing Unit" },
@@ -18,7 +19,9 @@
   { "q": "Was bedeutet AHCI?", "a": "Advanced Host Controller Interface \n  techn. Standard für SATA Controller" },
   { "q": "Was bedeutet NVMe?", "a": "Non-Volatile Memory Express \n Hochgeschwindigkeits-Speicherprotokoll für moderne SSDs" },
   { "q": "Was bedeutet iEEE?", "a": "" },
-  { "q": "Was bedeutet ?", "a": "" }
+  { "q": "Was bedeutet ?", "a": "" },
+  { "q": "Was bedeutet ?", "a": "" },
+  { "q": "Was bedeutet ?", "a": "" }, { "q": "Was bedeutet ?", "a": "" }
 ]
 
 
